@@ -1,0 +1,1070 @@
+---reverse array---------------
+public class test
+			public static void main(String[] args)
+		    {
+					int[] arr = {1,2,3,4};
+					int n = arr.length;
+					//System.out.println(n);
+					//test2 obj = new test2();
+					test2.reverse(arr, 0, n-1);
+					for(int k=0; k<n; k++)
+					{
+						System.out.println(arr[k] + " ");
+					}
+		    }		
+}
+class test2{
+	
+public static int[] reverse(int[] a, int i, int j)
+{
+	//System.out.println(j);
+	int temp;
+
+	while(i<j)
+	{
+		temp = a[i];
+		a[i] = a[j];
+		a[j]=temp;
+	i=i+1;
+	j=j-1;
+	}	
+
+	return a;
+}
+
+}
+----------------------------123 = 1+2+3 = 6
+public class test{
+			public static void main(String[] args) throws NumberFormatException, IOException
+		    {
+					BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+					int input = Integer.parseInt(br.readLine());
+					test2.reverse(input);
+
+		    }
+			
+}
+class test2{
+	
+public static int reverse(int a)
+{
+	int sum = 0;
+	while(a!=0) {
+	sum = sum + (a%10);
+	a = a/10;
+	}
+	return sum;
+	
+}
+
+}
+------------*********** max element in array and it's index-----------------
+
+
+public class test{
+			public static void main(String[] args) throws NumberFormatException, IOException
+		    {
+				int arr[] = {10, 5, 40, 30, 20};
+				test2 obj = new test2();
+				int k = obj.counts(arr);
+				System.out.println(k);
+				
+		    }
+}
+
+class test2{
+	
+	public  int counts(int[] a)
+	{
+		
+		int n = a.length;
+		int sum = 0;
+		int min = 0;
+		int temp;
+		int max = a[0];
+		
+		//boolean visited[] =new boolean[n];
+	//	Arrays.fill(visited, false);
+		
+		for(int i = 1; i<n; i++)
+		{			
+			if(a[i]>max)
+			{
+				max = a[i];
+			}	
+	}
+		return max;
+	}
+	
+}
+-------------************elements and return index didn't execute properly**************-----------------------
+
+
+public class test{
+			public static void main(String[] args) throws NumberFormatException, IOException
+		    {
+				int arr[] = {20, 50, 40, 30};
+				int x = 0;
+				int n = arr.length;
+				while(x<n)
+			{
+					test2 obj = new test2();
+				int k = obj.counts(arr, n);
+		System.out.println(k);
+				int m2 = test2.indexes(arr, k,n);
+			//System.out.println(m2);
+			x = x+1;
+				}
+		    }
+}
+class test2{
+	
+	public static  int counts(int[] a, int len)
+	{
+
+		int max = a[0];
+		for(int i = 1; i<len; i++)
+		{			
+			if(a[i]>max)
+			{
+				max = a[i];
+			}	
+	}
+		return max;
+	}
+	public static int indexes(int[] a, int k, int lens)
+	{
+		int j = 0;
+		while(j<lens)
+		{
+			if(a[j] == k)
+				break;
+			j++;
+		}
+		System.out.println(j);
+		
+		int temp = a[j];
+		a[j] = a[lens-1];
+		a[lens-1] = temp;
+	while(lens >1)
+		return counts(a, lens-1);
+	return 1;
+	}
+}
+
+
+
+
+
+------------***************************---------------------------
+/*
+input = 5
+o/p = 2,3
+*/
+public class test{
+			public static void main(String[] args) throws NumberFormatException, IOException
+		    {
+				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				System.out.println("Enter the number");
+				int input = Integer.parseInt(br.readLine());
+				test2.prime(input);
+		    }
+}
+class test2{
+
+	public static void prime(int input) {
+		boolean flag = false;
+		if(input == 1)
+			System.out.println("Enter number greater than one");
+		else {
+			System.out.println(2 + "\n" + 3);
+			int i =4;
+		while(i<=input)
+		{
+			for(int j=2; j<=i/2;j++)
+			{
+				if(i%j==0)
+					{
+							flag = true;
+								break;
+			
+			}	
+				else
+					flag = false;
+			}
+			
+	
+			if(flag == false)
+			{
+				System.out.println(i);
+			}			
+			i++;
+			}	
+	}
+	}
+	}
+
+
+
+
+
+---------------------------
+------ number of occurances ***********--------------
+/*
+ *Input :  arr[] = {10, 20, 20, 10, 10, 20, 5, 20}
+Output : 10 3
+         20 4
+         5  1  
+ * 
+*/
+
+public class test{
+			public static void main(String[] args) throws NumberFormatException, IOException
+		    {
+					ArrayList<Integer> t1 = new ArrayList<Integer>();
+					t1.add(10);
+					t1.add(10);
+					t1.add(10);
+					t1.add(30);
+					t1.add(10);
+					t1.add(10);
+					t1.add(5);
+					t1.add(5);
+					t1.add(20);
+					t1.add(20);
+					Collections.sort(t1);
+					test2.counts(t1);
+		    }
+}
+
+class test2{
+	
+	public static void counts(ArrayList<Integer> a)
+	{
+		System.out.println(a);
+		int n = a.size();
+		int count1 = 1;
+		System.out.println(count1);
+		ArrayList<Boolean> visited = new ArrayList<Boolean>();
+		Collections.fill(visited, Boolean.FALSE);
+		for(int i = 0; i<n; i++)
+		{
+			System.out.println(visited.get(i));
+			
+			for(int j=i+1; j<n; j++)
+			{
+				if(a.get(i) == a.get(j))
+				{
+					count1 = count1 +1; 
+					visited.set(i, true);
+					System.out.println(count1);
+					
+				}
+			}
+			
+			System.out.println(visited);
+			if(visited.get(i) == true)
+			{
+				System.out.println(a.get(i) + " " + count1);
+				break;
+			}
+		} 
+
+	}	
+}
+---------*****least prime factor-----------
+
+/*
+input = 15
+o/p = 1, 3, 5, 
+*/
+public class test{
+			public static void main(String[] args) throws NumberFormatException, IOException
+		    {
+				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				System.out.println("Enter the number");
+				int input = Integer.parseInt(br.readLine());
+				test2.prime(input);
+		    }
+}
+class test2{
+
+	public static void prime(int input) {
+		
+		
+			for(int i=1; i<=input;i++)
+			{
+				int[] temp = new int[i+1];
+			for(int j=1; j<=i;j++)
+			{
+				if(i%j==0)
+				{
+				temp[j] = j;	
+				}
+			else temp[j] = Integer.MAX_VALUE;
+			}
+			//do sorting here
+			if(!(i == 1 || i ==2))
+			{	
+			int l = sort(temp);
+	System.out.println("Prime Factors for" + "" + i + "is " +l);
+			}
+
+			}	
+			}
+
+	private static int sort(int[] temp) {
+		int n = temp.length;
+		int max = temp[2];
+		for(int i = 3; i<n; i++)
+		{	
+			
+			if(temp[i]<max)
+			{
+				max = temp[i];
+			}	
+	}
+		return max;
+		}
+	}
+--------------------************maximum of subarray--------------
+/* input = [-2,1,-3,4,-1,2,1,-5,4]
+o/p = 6
+*/
+
+class Solution {
+    public int maxSubArray(int[] nums) {
+        
+               int n = nums.length;
+		int max = nums[0];
+		for(int i=0; i<n; i++)
+		{
+			int sum = nums[i];
+			for(int j = i+1; j<n ;j++)
+			{
+				sum= sum + nums[j];
+				if(sum >max)
+					max = sum;
+			} 
+		}
+		return max;   
+    }
+}
+
+-------------------**********Best Time to Buy and Sell Stock***********---------------
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        
+        	int n = prices.length;
+		int max = 0;
+		for(int i=0; i<n; i++)
+		{
+			int diff = prices[i];
+			//int max = a[i];
+			for(int j = i+1; j<n ;j++)
+			{
+				if(prices[j] > prices[i])
+				{
+				diff= prices[j] - prices[i];
+				if(diff >max)
+					max = diff;
+				}
+			} 
+		}
+		return max;   
+    }
+}
+--------**** reverse only alphabets without special chars-----------
+input -- "ab,cdef";
+0/p -- fe,dcba
+public static void maxnum(String a) {
+		char[] ch = a.toCharArray();
+		int n = ch.length;
+		int l = 0;
+		int r = n-1;
+		while(l<r)
+		{
+		if(!Character.isAlphabetic(ch[l]))
+			l++;
+		else if(!Character.isAlphabetic(ch[r]))
+			r--;
+		else
+		{
+			char temp = ch[l];
+			ch[l] = ch[r];
+			ch[r] = temp;
+			l++;
+			r--;
+		}	
+		}
+		String st = new String(ch);
+		System.out.println(st);	
+		
+	}
+------------******GCD of two nums*******----------------
+	public static void maxnum(int p, int q) {		
+		ArrayList<Integer> ht1 = new ArrayList<Integer>();
+		ArrayList<Integer> ht2 = new ArrayList<Integer>();
+		ArrayList<Integer> ht3 = new ArrayList<Integer>();
+		
+	for(int i=2; i<p/2; i++)
+	{
+		if((p%i) == 0)
+		 ht1.add(i);
+	}
+	for(int i=2; i<q/2; i++)
+	{
+		if((q%i) == 0)
+		 ht2.add(i);
+	}
+	System.out.println(ht1);
+	System.out.println(ht2);
+	int n1 = ht1.size();
+	int n2 = ht2.size();
+	
+		for(int i=0; i<n1; i++)
+		{
+			for(int j=0; j<n2; j++)
+			{
+			if(ht1.get(i) == ht2.get(j))
+			{
+				ht3.add(ht1.get(i));
+			}
+		}
+
+	}
+		System.out.println(ht3);
+		int n3 = ht3.size();
+		System.out.println(ht3.get(n3-1));
+	}
+}	
+------*** number of characters in a string****-----
+/*
+input =  swarna
+output : s  1
+w  1
+a  2
+r  1
+n  1
+*/
+public class test{
+	public static void main(String[] args) throws NumberFormatException, IOException
+    {
+		String str = "swarna";
+		test2.gcd(str);
+    }
+}
+class test2{
+
+
+public static void gcd(String s) {
+
+boolean visited[] = new boolean[s.length()];	
+for (int i = 0; i < s.length(); i++) 
+{ 
+	int count = 1;
+	for (int j = i+1; j < s.length(); j++) 
+	{
+		if(s.charAt(i) == s.charAt(j))
+		{
+			count = count +1;
+			visited[j] = true;
+		}
+}
+if(visited[i] == false)
+	System.out.println(s.charAt(i) + "  " +count);
+	
+}
+}
+}	
+-----------------Rotate array with k elements********-------------
+class test2{
+
+	public static void reversearray(int[] a,int k) {
+		int n = a.length;
+		int i= 0;
+		while(i<k)
+		{
+			 swap(a,k);
+			k--;
+		}
+		for(int l = 0; l<n; l++)
+			System.out.println(a[l]);	
+	}
+	
+		public static void swap(int[] a,int k)
+		{
+			int n = a.length;
+			for(int j = 0; j<n; j++)
+			{
+				int temp = a[n-1];
+				while(n>1)
+				{
+					a[n-1] = a[n-2];
+					n = n-1;
+				}
+				a[0]= temp;				
+			}
+	}
+	}
+---------*****2D array reverse with specified indexes******---
+public static void main(String[] args) {
+	int[] a = {5,3,2,1,3};
+	int[][] op = {{0,1}, {1,3}};
+	test2.reversearray(a, op);
+}
+}
+class test2{
+	public static void reversearray(int[] a,int[][] op) {		
+		int n = op.length;	
+		int l = 0;
+		int m = 0;
+		for(int i=0; i<n; i++)
+		{
+			for(int j =0; j<1;j++)
+			{
+				 l = op[i][j];
+				 m= op[i][j+1];
+				 int temp = a[l];
+				 a[l] = a[m];
+				 a[m] = temp;
+			}
+		}
+		for(int i=0; i<a.length; i++)
+		{
+			System.out.println(a[i]);
+		}
+		
+		}
+	}
+---------*****2D array reverse with specified indexes (arraylist)******---	
+ArrayList<ArrayList<Integer>> opr = new ArrayList<ArrayList<Integer>>();
+	opr.add(new ArrayList<Integer>());
+	opr.get(0).add(0,0);
+	opr.get(0).add(1,1);
+	opr.add(new ArrayList<Integer>());
+	opr.get(1).add(0,2);
+	opr.get(1).add(1,3);
+	System.out.println(opr);
+	int[][] op = {{0,1}, {1,3}};
+	test2.reversearray(ar, opr);
+}
+}
+class test2{
+	public static void reversearray(ArrayList<Integer> ar,ArrayList<ArrayList<Integer>> opr) {		
+		int n = opr.size();	
+		int l = 0;
+		int m = 0;
+		for(int i=0; i<n; i++)
+		{
+			for(int j =0; j<1;j++)
+			{
+				 l = opr.get(i).get(j);
+				 m= opr.get(i).get(j+1);
+				 Collections.swap(ar, l, m);
+			}
+		}
+		for(int i=0; i<ar.size(); i++)
+		{
+			System.out.println(ar.get(i));
+		}
+		
+----***count number of pairs***----
+
+/*
+	int[] a = {1,2,1,2,1,3,2}; ---- 
+	count pairs (1,1 - 2,2,- o/p 2 pairs)
+	
+ */
+
+public class test{
+	public static void main(String[] args) throws NumberFormatException, IOException
+	{	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int input;
+		System.out.println("enter array size");
+		input =Integer.parseInt(br.readLine());
+		System.out.println("enter array elements");
+		int[] a = new int[input];
+		for(int i = 0; i<input; i++)
+		{
+			a[i] = Integer.parseInt(br.readLine());
+		}
+		int l = a.length;
+		test2 obj = new test2();
+		int k = obj.pair(a,l);
+		System.out.println(k);
+	}
+}
+
+class test2 {
+	public static int pair(int[] a, int l)
+	{
+		int count = 0;
+		boolean visited[] = new boolean[l];
+		for(int i = 0; i<l; i++)
+		{
+			if(visited[i] == true)
+				continue;
+			for(int j = i+1; j<l; j++)
+			{
+				if(a[i]==a[j])
+				{
+					count = count +1;
+					visited[j] = true;
+					break;
+				}}}		
+		return count;
+	}
+}
+--------------**************-----------
+/*
+a= "abc", n = 10
+o/p abaabaabaa -- string loop untill n, and then count no of a's
+*/
+public static long repeatedString(String s, long n) {
+        long count = 0;
+        int l = s.length();
+        System.out.println(l);
+        if(s.length() ==1)
+        {
+            if(s.equals("a"))
+            {
+          return count = n;
+            }
+            else
+           return count = 0;
+            
+        }
+        else {
+        ArrayList<String> s1 = new ArrayList<String>();
+        String[] s2 = s.split("");
+        while(s1.size()<n)
+        {
+        for(int i = 0; i< l ;i++)
+        {
+            if(s1.size()<n)
+           s1.add(s2[i]);
+            else
+                break;
+        }
+        }
+        for(int i = 0; i< s1.size() ;i++)
+        {
+               count = count +1;
+       }
+        }	
+        return count;
+    }
+
+}
+------******2D Array*******----------
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0
+0 0 1 2 4 0
+0/p - 19 ( --add 1+1+1 +1 + 1+1+1)
+1 1 1
+0 1 0
+1 1 1
+			    public static int hourglassSum(ArrayList<ArrayList<Integer>> arr) {
+    System.out.println(arr);
+ int sum;
+  ArrayList<Integer> a1 = new ArrayList<Integer>();
+    for(int i = 0; i< arr.size()-2; i++)
+    {
+    	for(int j = 0; j< arr.size()-2 ; j++)
+    	{
+    		sum = arr.get(i+1).get(j+1);
+    		for(int k = j; k < j + 3; k++)
+        	{
+    			sum = sum + arr.get(i).get(k) + arr.get(i+2).get(k);
+    			a1.add(sum);
+        	}
+
+    	}
+    }
+
+    
+    return Collections.max(a1);
+
+    }
+	
+---------********hashmap, string********-----------------
+//o/p [1,2] - having more than 2 transactions
+i/p logs = ["1 2 50", "1 7 70", "1 3 20", "2 2 17"]
+	public class test{
+	   public static void main(String[] args) {
+		   List<String> logs=new ArrayList<String>();
+		   logs.add("1 2 50");
+		   logs.add("1 7 70");
+		   logs.add("1 3 20");
+		   logs.add("2 2 17");
+		   int threshold = 2;
+		System.out.println(test2. processLogs(logs, threshold));
+	        
+	    }
+
+
+}
+
+class test2{
+
+    public static List<String> processLogs(List<String> logs, int threshold) {
+  List<String> resultFinal=new ArrayList<String>();
+   HashMap<String, Integer> map = new HashMap<>();
+        for (String i : logs) {  
+            String firstElement = i.split(" ")[0].trim();
+            String secondElemet = i.split(" ")[1].trim();
+            System.out.println(firstElement+ " ; " +secondElemet);
+            int count = 1;
+            int a = 0;
+            int b = 0;            
+            if (map.containsKey(firstElement)) {               
+                a = map.get(firstElement);
+                count+=a;   
+                map.put(firstElement, count);
+            } else {
+                map.put(firstElement, count);
+            }
+            count = 1;
+            if(map.containsKey(secondElemet)) {
+                  b = map.get(secondElemet);
+                  count+=b;                
+                  if(firstElement.equals(secondElemet)) {
+                      count-=1;
+               //System.out.println(firstElement+ ";;  "+count);
+                  }
+                  map.put(secondElemet, count);                  
+            } else {
+                map.put(secondElemet, count);    
+            }                       
+        }
+        for (Map.Entry<String,Integer> entry1 : map.entrySet())
+            if(entry1.getValue() >= threshold)
+                    resultFinal.add(entry1.getKey());
+        return resultFinal;
+    }
+	}
+	
+	--------------*****************---------------
+	compare string sin magazone , note -- all strings in note should preseng im magazine - yes
+	 public static void checkMagazine(List<String> magazine, List<String> note) {
+    // Write your code here
+    int n = note.size();
+    int count = 0;
+    
+    boolean[] visited = new boolean[magazine.size()];
+    visited[0] = false;
+
+        for(int i = 0; i< magazine.size(); i++)
+        {
+            for(int j = 0; j< note.size(); j++)
+        {
+            if(magazine.get(i).equals(note.get(j)) && visited[i] == false)
+            {
+                count = count + 1;
+                visited[i] = true;
+				break;
+            }
+            
+        }
+        }
+        if(count == note.size())
+        System.out.println("Yes");
+        else
+        System.out.println("No");
+
+
+
+    }
+	
+	
+	---***----Matcing string s2 in s1*--- substring
+	s1= hi
+	s2= he --o/p yes
+	class Result {
+    public static String twoStrings(String s1, String s2) {
+Map<String, Integer> hm = new HashMap<String, Integer>();
+    String[] c1 = s1.split("");
+    String[] c2 = s2.split("");
+    String result = null;
+    int l1 = c1.length;
+    int l3 = s1.length();
+    int l2 = c2.length;
+    for(int i=0; i<l1; i++)
+    {
+        if(hm.containsKey(c1[i]))
+        {
+            hm.put(c1[i], hm.get(c1[i])+1);
+        }
+        else
+        hm.put(c1[i], 1);
+    }
+    boolean check = false;
+    for(int i=0; i<l2; i++)
+    {
+            if(!hm.containsKey(c2[i]))
+                check=false;
+                else
+                {
+                    check = true;
+                    break;
+                }
+        }
+        if(!check)
+        return result = "NO";
+        else
+        return result = "YES";
+    }
+
+}
+
+--add data at end in LL****-------
+    /*
+     * For your reference:
+     *
+     * SinglyLinkedListNode {
+     *     int data;
+     *     SinglyLinkedListNode next;
+     * }
+     *
+     */
+     
+    static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
+       // System.out.println(head + "--" +data);
+       // Node new Node 
+       SinglyLinkedListNode new_node = new SinglyLinkedListNode(data);
+ 
+    /* 4. If the Linked List is empty, then make the
+           new node as head */
+   if (head == null)
+   {
+        head = new SinglyLinkedListNode(data);
+        return head;
+    }
+ 
+    /* 4. This new node is going to be the last node, so
+         make next of it as null */
+    new_node.next = null;
+ 
+    /* 5. Else traverse till the last node */
+    SinglyLinkedListNode last = head;
+    while (last.next != null)
+        last = last.next;
+ 
+    /* 6. Change the next of last node */
+    last.next = new_node;
+    //return;
+     //  return new SinglyLinkedListNode(data);
+    return head;
+	
+	
+	----*********  Intersection of two arrays *****-----------------
+	class Solution {
+    public int[] intersect(int[] nums1, int[] nums2) {
+       // int[] nums3 = new int[]{null};
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        
+        for(int i=0; i<nums1.length ;i++)
+        {
+            for(int j=0; j<nums2.length; j++)
+            {
+                if(nums1[i]==(nums2[j]))
+                {
+                    if(arr.get(i) != nums1[i])
+                    {
+                    arr.add(nums1[i]);
+                    break;
+                    }
+                }
+            }
+        }
+      int[] a = arr.stream().mapToInt(i -> i).toArray();
+      //  al = arr.toArray(al);
+         //Integer[] a = arr.toArray(new Integer[0]);
+        return a;
+        
+    }
+}
+
+---****---
+    public void rotate(int[] nums, int k) {
+        		int n = nums.length;
+		int i= 0;
+		while(i<k)
+		{
+			 swap(nums,k);
+			i++;
+		}
+		//for(int l = 0; l<n; l++)
+			//System.out.println(nums[l]);
+ 
+    }
+    public static void swap(int[] a,int k)
+		{
+			int n = a.length;
+			for(int j = 0; j<n; j++)
+			{
+				int temp = a[n-1];
+				while(n>1)
+				{
+					a[n-1] = a[n-2];
+					n = n-1;
+				}
+				a[0]= temp;				
+			}
+	}
+	
+	-----*****add 1 to the numer ***-----
+	i/p - 192 - 193 : 999 - 100 ; 109   - 110
+	
+	public int[] plusOne(int[] digits) {
+    int n = digits.length;
+
+    for (int idx = n - 1; idx >= 0; --idx) {
+
+      if (digits[idx] == 9) {
+        digits[idx] = 0;
+      }
+
+      else {
+
+        digits[idx]++;
+        // and the job is done
+        return digits; --------will stop execution of the for loop and returns the digits i.e (192) -- returns 193
+      }
+    }
+    // we're here because all the digits are nines
+    digits = new int[n + 1];
+    digits[0] = 1; -------------------------if it is nine , then it won't go to else loop above, so we make digit[0] = 1, and returns the digits
+    return digits;
+  }
+  
+  ---*** reverse strings***----
+  i/p = ["h","e","l","l","o"]
+  
+o/p = ["o","l","l","e","h"]
+    public void reverseString(char[] s) {
+                int n = s.length;
+        int i =0;
+        int j = n-1;
+        while( i <(n/2) && j>=(n/2))
+        {
+          	 char temp = s[j];
+                		s[j] = s[i];
+                		s[i] = temp;
+                		
+                		i++;
+                		j--;
+                
+            }
+        System.out.println(s);
+    }
+	
+	----**** convert string to int****----
+	
+	public int myAtoi(String s) {
+	String[] s1  = s.split(""); 
+	ArrayList<Integer> ar = new ArrayList<Integer>();
+	int n = s1.length;
+	int i =0;
+	String regex = "^[a-zA-Z+]";
+	if (s1[0].matches(regex))
+			return 0;
+    else if((s1[0].equals( "+")  && s1[1] .equals("-")) || (s1[0].equals("-") && s1[1].equals("+")))
+        return 0;
+	while(i<n)
+	{
+		
+		if(s1[i].contains(" "))
+		{
+			i++;
+			continue;
+		}
+		else if(s1[i].contains( "-" ) || s1[i].contains("+"))
+		{
+			i++;
+			continue;
+		}
+		else if(s1[i].matches(".*\\d.*"))
+		{
+			ar.add(Integer.parseInt(s1[i]));
+			i++;
+		}
+
+		else
+		{
+			i++;
+			break;
+
+		} 
+	}
+	System.out.println(ar);
+	long sum = 0;
+	
+	for(int j=0; j<ar.size();j++)
+	{
+		sum = sum * 10 + ar.get(j);
+	}
+	if(s.contains( "-" ))
+		sum = sum *-1;
+	else if(s.contains( "+" ))
+		sum = sum *+1;
+
+	
+	
+	if(( sum > Integer.MAX_VALUE))
+	{
+		return Integer.MAX_VALUE;
+	}
+	else if(sum < Integer.MIN_VALUE)
+		return Integer.MIN_VALUE;
+
+	return (int)sum;
+        
+    }
+	--**compare 1st string with 2nd and return it's index if present ***----
+	public int strStr(String haystack, String needle) {
+
+		 	if(needle.length() == 0) return 0;
+		 	else if (!haystack.contains(needle))
+		 		return -1;
+		 	else
+		 		return haystack.indexOf(needle);
+---***-----Palindrome----****
+public boolean isPalindrome(String s) {
+        
+         String s2=s.toLowerCase();
+		 String[] s1 = s2.split("");
+		 s = s.replaceAll("[^a-zA-Z0-9]", "");
+		 System.out.println(s);
+		 String regex= "[a-zA-Z0-9]+";
+		 ArrayList<String> ar1 = new ArrayList<String>();
+		 ArrayList<String> ar2 = new ArrayList<String>();
+		 for(int i=0; i<s1.length; i++)
+		 {
+			 if(s1[i].matches(regex))
+			 {
+			 ar1.add(s1[i]);
+			 }
+		 }
+		 System.out.println(ar1);
+		 for(int i=(s1.length)-1; i>=0; i--)
+		 {
+			 if(s1[i].matches(regex))
+			 ar2.add(s1[i]);
+		 }
+		 System.out.println(ar2);
+		 
+		 
+		 if(ar1.equals(ar2))
+		 return true;
+		 
+		 else
+			 return false;
+        
+    }
