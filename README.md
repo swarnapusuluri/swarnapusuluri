@@ -1,4 +1,4 @@
-</h2> 👋 Hi there, I'm Vasanta Swarna Ratnam Pusuluri </h2>
+<h2 align="center"> 👋 Hi there, I'm Vasanta Swarna Ratnam Pusuluri </h2>
   <p align="center">
   💻 Java Backend Developer | ☁️ Cloud Enthusiast | 🚀 Problem Solver
 </p>
