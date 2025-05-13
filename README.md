@@ -75,6 +75,6 @@
 - 📧 Email: [swarnapusuluri@gmail.com](mailto:swarnapusuluri@gmail.com)  
 - 💼 LinkedIn: [linkedin.com/in/swarna-pusuluri](https://www.linkedin.com/in/swarna-pusuluri/)  
 - 📱 Phone: +1 (858) 282-7541  
-- 🌎 Location: Minnesota, USA (Open to Relocation)
+- 🌎 Location: USA
 
 ---
