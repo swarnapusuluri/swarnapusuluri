@@ -1,16 +1,24 @@
 <h2 align="center"> 👋 Hi there, I'm Vasanta Swarna Ratnam Pusuluri </h2>
   <p align="center">
-  💻 Java Backend Developer | ☁️ Cloud Enthusiast | 🚀 Problem Solver
+  Java Developer | 5+ Years Experience | Spring Boot | Microservices | AWS | React | Docker | Kubernetes | Kafka
 </p>
 ---
+### 🔍 Companies
+Fulltime:
+Thermo Fisher Scientific - Nov 2022 to March 2025
+Deloitte - Oct 2021 to Nov 2022
+Tata Consultancy Services - Aug 2017 to Dec 2019
+
+Internship:
+St. Cloud State Graduate Assiatant - March 2020 to May 2021
+AppsTek Corp - May 2016 to Sep 2016
 
 ### 🔍 About Me
 
-- 💼 Experienced in building and supporting scalable enterprise applications
-- 💡 Skilled in Java, Spring Boot, Oracle, Docker, AWS, React and microservices
-- 🌐 Worked across industries using Agile Scrum methodology
-- 🛠️ Hands-on with CI/CD (GitHub Actions, Jenkins), REST APIs, and SFTP automation
-- 🌱 Currently exploring: **Kubernetes**, **AI-powered search**, and **full-stack apps**
+- Experienced in building and supporting scalable enterprise applications
+- Skilled in Java, Spring Boot, Oracle, Docker, AWS, React and microservices
+- Worked across industries using Agile Scrum methodology
+- Hands-on with CI/CD (GitHub Actions, Jenkins), REST APIs, and SFTP automation
 
 ---
 
@@ -27,7 +35,6 @@
 
 ### 📫 Let’s Connect
 
-- 🌐 Portfolio: [your-website.com](https://your-website.com)
-- 📧 Email: your.email@example.com
-- 💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- 🔗 GitHub: [github.com/your-username](https://github.com/your-username)
+- 📧 Email: swarnapusuluri@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/swarna-pusuluri/
+- Phone : +1 858-282-7541
