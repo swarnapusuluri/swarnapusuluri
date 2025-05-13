@@ -72,7 +72,7 @@
 
 ### 🛠 Projects & Research
 
-- 🔧 **[JavaSpringBootAWS](https://github.com/swarnapusuluri/JavaSpringBootAWS)**  
+- 🔧 **[JavaSpringBootAWS_SwarnaP](https://github.com/swarnapusuluri/JavaSpringBootAWS_SwarnaP)**  
   An enterprise-grade cloud-native microservices application built using **Java Spring Boot**, **Docker**, **Kubernetes (EKS)**, and **AWS services**. Implements CI/CD via **GitHub Actions**, container orchestration, and monitoring with **Grafana** and **Splunk**.
 
 - 📄 **[Serverless Technologies – Research Paper](https://repository.stcloudstate.edu/msia_etds/126/)**  
