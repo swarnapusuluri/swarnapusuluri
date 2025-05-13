@@ -1,5 +1,7 @@
 👋 Hi there, I'm Vasanta Swarna Ratnam Pusuluri
+  <p align="center">
   💻 Java Backend Developer | ☁️ Cloud Enthusiast | 🚀 Problem Solver
+</p>
 ---
 
 ### 🔍 About Me
