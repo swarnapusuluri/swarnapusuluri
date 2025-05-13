@@ -5,7 +5,7 @@
 
 ---
 
-### 🔍 Companies
+###  Companies
 
 **Full-Time Roles**
 - **Thermo Fisher Scientific** – *Java Developer* (Nov 2022 – Mar 2025)
@@ -44,12 +44,12 @@
 
 ### 🧠 Projects & Highlights
 
-- 🚀 Migrated COBOL-based legacy systems to modern microservices, boosting scalability and reducing maintenance costs.  
-- 🤖 Delivered GenAI-powered **semantic search** engine using **OpenAI + FAISS**, improving search accuracy by **45%**.  
-- 📈 Improved deployment speed by **50%** using automated CI/CD pipelines.  
-- 📦 Led containerization of enterprise applications using **Docker, JFrog**, and **Kubernetes**, enhancing orchestration and security.  
-- 🔒 Implemented OAuth2 and JWT-based security and conducted static/dynamic security testing (SonarQube, Fortify).  
-- 🌩️ Worked with serverless infrastructure on AWS including **Lambda**, **S3**, **DynamoDB**, **CloudWatch**, and **SFTP automation**.
+-  Migrated COBOL-based legacy systems to modern microservices, boosting scalability and reducing maintenance costs.  
+-  Delivered GenAI-powered **semantic search** engine using **OpenAI + FAISS**, improving search accuracy by **45%**.  
+-  Improved deployment speed by **50%** using automated CI/CD pipelines.  
+-  Led containerization of enterprise applications using **Docker, JFrog**, and **Kubernetes**, enhancing orchestration and security.  
+-  Implemented OAuth2 and JWT-based security and conducted static/dynamic security testing (SonarQube, Fortify).  
+-  Worked with serverless infrastructure on AWS including **Lambda**, **S3**, **DynamoDB**, **CloudWatch**, and **SFTP automation**.
 
 ---
 
@@ -62,11 +62,11 @@
 
 ### 🏆 Certifications & Awards
 
-- ✅ **Certified OutSystems Associate Reactive Developer**
-- 🏅 Performance Recognition Award – *Thermo Fisher Scientific*
-- 🏅 Best Team Player Award – *Deloitte*
-- 🏅 Certificate of Appreciation – *TCS*
-- 🏅 Excellence in Leadership & Academic Excellence – *St. Cloud State University*
+-  **Certified OutSystems Associate Reactive Developer**
+-  Performance Recognition Award – *Thermo Fisher Scientific*
+-  Best Team Player Award – *Deloitte*
+-  Certificate of Appreciation – *TCS*
+-  Excellence in Leadership & Academic Excellence – *St. Cloud State University*
 
 ---
 
