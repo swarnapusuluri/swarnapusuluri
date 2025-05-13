@@ -72,15 +72,14 @@
 
 ### 🛠 Projects & Research
 
-- 📄 **Serverless Technologies - Research Paper**  
-  Academic research paper exploring **serverless computing**, its architectural patterns, cost optimization strategies, and a comparative study of AWS Lambda vs traditional architectures.  
-  🔗 [Read Paper](https://github.com/your-username/serverless-technologies)
+- 🔧 **[JavaSpringBootAWS](https://github.com/swarnapusuluri/JavaSpringBootAWS)**  
+  An enterprise-grade cloud-native microservices application built using **Java Spring Boot**, **Docker**, **Kubernetes (EKS)**, and **AWS services**. Implements CI/CD via **GitHub Actions**, container orchestration, and monitoring with **Grafana** and **Splunk**.
+
+- 📄 **[Serverless Technologies – Research Paper](https://repository.stcloudstate.edu/msia_etds/126/)**  
+  A master's research paper analyzing **serverless computing** architectures, cost optimization, and scalability. Includes a comparison of **AWS Lambda** vs traditional server-based approaches.  
+  🔗 [Download PDF](https://core.ac.uk/download/543558514.pdf)
   or
-  
-  
-  - 🔧 **JavaSpringBootAWS**  
-  End-to-end enterprise application using **Java Spring Boot**, **AWS**, **EKS**, **Docker**, **Kubernetes**, and **GitHub Actions**. Demonstrates cloud-native microservices deployment with CI/CD pipelines and monitoring tools like **Grafana** and **Splunk**.  
-  🔗 [View Project](https://github.com/your-username/JavaSpringBootAWS)
+   [Read Paper](https://github.com/swarnapusuluri/Serverless_Technologies)
 
 --- 
 
