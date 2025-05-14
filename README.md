@@ -1,6 +1,7 @@
 <h2 align="center">👋 Hi there, I'm Vasanta Swarna Ratnam Pusuluri</h2>
 <p align="center">
-  <strong>Java Developer | 5+ Years Experience | Spring Boot | Microservices | AWS | React | Docker | Kubernetes | Kafka</strong>
+  <strong>Java Developer | Spring Boot | Microservices | AWS | React | Docker | Kubernetes | Kafka</strong>
+  <strong>Portfolio: https://order-management-system-ui.vercel.app/   | GitHub: https://github.com/swarnapusuluri </strong>
 </p>
 
 ---
@@ -72,6 +73,9 @@
 
 ### 🛠 Projects & Research
 
+- 🔧 **[Swarna_OrderManagement](https://order-management-system-ui.vercel.app/)**  
+  Developed a cloud-native Order Management System using **Java Spring Boot**, **React**, and **Docker**. Implemented CRUD operations, authentication, order tracking, and RESTful APIs. Deployed using Docker & CI/CD via **GitHub Actions**.
+  
 - 🔧 **[JavaSpringBootAWS_SwarnaP](https://github.com/swarnapusuluri/JavaSpringBootAWS_SwarnaP)**  
   An enterprise-grade cloud-native microservices application built using **Java Spring Boot**, **Docker**, **Kubernetes (EKS)**, and **AWS services**. Implements CI/CD via **GitHub Actions**, container orchestration, and monitoring with **Grafana** and **Splunk**.
 
