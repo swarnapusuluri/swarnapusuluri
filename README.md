@@ -1,6 +1,8 @@
 <h2 align="center">👋 Hi there, I'm Vasanta Swarna Ratnam Pusuluri</h2>
 <p align="center">
   <strong>Java Developer | Spring Boot | Microservices | AWS | React | Docker | Kubernetes | Kafka</strong>
+</p>
+<p align="center">
   <strong>Portfolio: https://order-management-system-ui.vercel.app/   | GitHub: https://github.com/swarnapusuluri </strong>
 </p>
 
