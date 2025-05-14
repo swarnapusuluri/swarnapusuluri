@@ -3,7 +3,7 @@
   <strong>Java Developer | Spring Boot | Microservices | AWS | React | Docker | Kubernetes | Kafka</strong>
 </p>
 <p align="center">
-  <strong>Portfolio: https://order-management-system-ui.vercel.app/   | GitHub: https://github.com/swarnapusuluri | LinkedIn: [linkedin.com/in/swarna-pusuluri](https://www.linkedin.com/in/swarna-pusuluri/)   </strong>
+  <strong>Portfolio: https://order-management-system-ui.vercel.app/   | GitHub: https://github.com/swarnapusuluri | LinkedIn: https://www.linkedin.com/in/swarna-pusuluri/   </strong>
 </p>
 
 ---
